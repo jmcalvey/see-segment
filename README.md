@@ -31,6 +31,12 @@ Dependencies can be installed individually or by creating a conda environment us
 
 	conda env create --prefix ./envs --file environment.yml
 
+To check if the install worked properly run the command below:
+
+**With makefile:** 
+
+  make test
+
 ### An Intro to SEE  
 
 Watch an introductory video to what SEE is, and how to use it [here](https://mediaspace.msu.edu/media/t/1_60yjrdjs).
