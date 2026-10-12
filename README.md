@@ -35,7 +35,9 @@ To check if the install worked properly run the command below:
 
 **With makefile:** 
 
-  make test
+```
+make test
+```
 
 ### An Intro to SEE  
 
