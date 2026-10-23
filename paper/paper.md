@@ -42,7 +42,7 @@ Module 2 Reflection: This assignment was super helpful for my project in particu
 
 ## Physical Modeling
 
-Draft a short reflection on what you learned in the physical modeling activities, which methods or tools were most useful, how the work relates to your project, and whether you plan to adopt any of the ideas.
+Module 3 Reflection: This module was particularly intersting to me because I did FEM simulations for an internship a couple summers ago. An important thing to validate before trusting a physical model is that an example worflow produces results similar to experimental results. For my project the example segmentations are just images which are sort of a physical thing that you can observe so a good test for my workflow would be to see how well it reproduces those segmentations.
 
 ## Data-Driven Modeling
 
