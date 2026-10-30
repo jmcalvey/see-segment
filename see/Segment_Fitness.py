@@ -7,7 +7,7 @@ import numpy as np
 from see.base_classes import algorithm
 
 
-def countMatches(inferred, ground_truth):
+def countMatches_original(inferred, ground_truth):
     """Map the segments in the inferred segmentation mask to the ground truth segmentation.
 
      mask, and record the number of pixels in each of these mappings as well as the number
@@ -44,6 +44,26 @@ def countMatches(inferred, ground_truth):
                 setcounts[i_key] = dict()
                 setcounts[i_key][g_key] = 1
     return setcounts, len(m), len(n)
+
+def countMatches(inferred, ground_truth):
+    """countMatches using numpy vectorization."""
+    assert inferred.shape == ground_truth.shape
+    pred = np.asarray(inferred).ravel()
+    gt = np.asarray(ground_truth).ravel()
+    pred_labels, pred_idx = np.unique(pred, return_inverse=True)
+    gt_labels, gt_idx = np.unique(gt, return_inverse=True)
+    m, n = len(pred_labels), len(gt_labels)
+    pairs = pred_idx * n + gt_idx
+    unique_pairs, first, counts = np.unique(
+        pairs, return_index=True, return_counts=True
+    )
+    setcounts = {}
+    for k in np.argsort(first):
+        i, j = divmod(int(unique_pairs[k]), n)
+        pl = pred_labels[i].item()
+        gl = gt_labels[j].item()
+        setcounts.setdefault(pl, {})[gl] = int(counts[k])
+    return setcounts, m, n
 
 
 def countsets(setcounts):
