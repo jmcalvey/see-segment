@@ -9,7 +9,7 @@ In order to achieve this goal, this project will utilize the power of genetic al
 ---
 
 ### Dependencies
-* python 3.7
+* python
   * [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
   * [jupyter](https://jupyter.readthedocs.io/en/latest/install.html)
 * [numpy](https://anaconda.org/anaconda/numpy)
@@ -20,6 +20,7 @@ In order to achieve this goal, this project will utilize the power of genetic al
 * [scoop](https://scoop.readthedocs.io/en/0.7/install.html)
 * [cv2](https://docs.opencv.org/master/da/df6/tutorial_py_table_of_contents_setup.html)
 * [pdoc3](https://pypi.org/project/pdoc3/)
+* [StackGP](https://hoolagans.github.io/StackGP-Documentation/)
 
 Dependencies can be installed individually or by creating a conda environment using the command below:  
 
@@ -38,6 +39,23 @@ To check if the install worked properly run the command below:
 ```
 make test
 ```
+
+### Example SEE-segment workflows
+
+**For Today:**
+
+  The HowToUse_Example or the Interactive_Example notebooks both provide a hands-on introduction to using this library.
+
+**With makefile:**
+
+```
+make install
+make demo
+```
+
+**For Tomorrow:**
+
+  Inside the StackGP folder there is a demo notebook currently under development that shows an implemention of see with StackGP instead of deap as the core genetic processing library.
 
 ### An Intro to SEE  
 
