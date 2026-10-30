@@ -779,7 +779,6 @@ class MorphGeodesicActiveContour(segmentor):
             self.params["alpha2"] = 1
             self.params["beta1"] = 0.2
             self.params["beta2"] = 0.3
-            self.params["beta2"] = 1
             self.params["max_num_iter"] = 10
             self.params["n_segments"] = 0
             # self.params["tolerance"] = 0.001 #TODO Removed, consider adding
