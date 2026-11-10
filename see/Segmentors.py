@@ -552,7 +552,7 @@ class Watershed(segmentor):
         return output
 
 
-segmentor.addsegmentor('Watershed', Watershed)
+#segmentor.addsegmentor('Watershed', Watershed)
 
 # TODO Chan_Vese one seems very broken.  All we get is a circle.
 
@@ -643,7 +643,7 @@ class Chan_Vese(segmentor):
         return output
 
 
-segmentor.addsegmentor('Chan_Vese', Chan_Vese)
+#segmentor.addsegmentor('Chan_Vese', Chan_Vese)
 
 
 class Morphological_Chan_Vese(segmentor):
