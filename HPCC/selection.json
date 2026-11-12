@@ -1,0 +1,21 @@
+{
+  "selection_rule": "Highest training-only 5-fold cross-validation balanced accuracy among completed runs with the same fixed split.",
+  "selected_run": {
+    "search_seed": 803,
+    "split_seed": 802,
+    "max_time_mins": 5.0,
+    "search_space": "linear",
+    "metric": "balanced_accuracy",
+    "cv_folds": 5,
+    "n_jobs": 1,
+    "n_training_observations": 455,
+    "n_features": 30,
+    "candidate_count": 200,
+    "best_cv_score": 0.9770897832817337,
+    "pipeline_path": "results/seed-803/pipeline.joblib",
+    "pipeline_repr": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('selectpercentile',\n                 SelectPercentile(percentile=94.3455455509338)),\n                ('featureunion-1',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('columnonehotencoder',\n                                                                                 ColumnOneHotEncoder())])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('featureunion-2',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('adaboostclassifier',\n                 AdaBoostClassifier(learning_rate=1.2273093815946,\n                                    n_estimators=236, random_state=803))])",
+    "scikit_learn_version": "1.9.1",
+    "tpot_version": "1.1.0"
+  },
+  "warning": "This record was selected without using the held-out test set. Evaluate it once, after reviewing stability and interpretability."
+}

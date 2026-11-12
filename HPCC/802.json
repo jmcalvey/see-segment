@@ -1,0 +1,17 @@
+{
+  "search_seed": 802,
+  "split_seed": 802,
+  "max_time_mins": 5.0,
+  "search_space": "linear",
+  "metric": "balanced_accuracy",
+  "cv_folds": 5,
+  "n_jobs": 1,
+  "n_training_observations": 455,
+  "n_features": 30,
+  "candidate_count": 250,
+  "best_cv_score": 0.9700722394220846,
+  "pipeline_path": "results/seed-802/pipeline.joblib",
+  "pipeline_repr": "Pipeline(steps=[('maxabsscaler', MaxAbsScaler()),\n                ('selectfwe', SelectFwe(alpha=0.0003075781093)),\n                ('featureunion-1',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('nystroem',\n                                                                                 Nystroem(gamma=0.3551260873163,\n                                                                                          kernel=np.str_('rbf'),\n                                                                                          n_components=9,\n                                                                                          random_state=802))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('featureunion-2',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('mlpclassifier',\n                 MLPClassifier(activation=np.str_('tanh'),\n                               alpha=0.0004373626566, early_stopping=np.False_,\n                               hidden_layer_sizes=[317, 317, 317],\n                               learning_rate=np.str_('adaptive'),\n                               learning_rate_init=0.0095440244284,\n                               n_iter_no_change=32, random_state=802))])",
+  "scikit_learn_version": "1.9.1",
+  "tpot_version": "1.1.0"
+}

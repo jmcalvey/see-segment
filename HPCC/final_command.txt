@@ -1,0 +1,3 @@
+python evaluate_selected_tpot.py --selection results/selection.json
+
+Held-out balanced accuracy: 1.000

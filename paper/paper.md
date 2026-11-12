@@ -46,7 +46,8 @@ Module 3 Reflection: This module was particularly intersting to me because I did
 
 ## Data-Driven Modeling
 
-Draft a short reflection on what you learned in the data-driven modeling activities, which methods or tools were most useful, how the work relates to your project, and whether you plan to adopt any of the ideas.
+Module 4 Reflection:
+Across the array tasks everything was the same except for the search seed, this is important because it ensures that each task has the same training data but tries different algorithms in the search space. The selected pipeline was only marginally better than the other runs but the accuracy of 1.000 proves that it is a very good choice for our final model. Ranking by the final test score would result in data leakage and would effectively result in using test data to train our model. A future teamate would at least need the array summary as it contains all of the changeable inputs for TPOT like seed and metric etc, as well as containing the versions of scikit_learn and TPOT. They would also need our labeled input data, in this case one of the scikit_learn example sets. Important artifacts would be the run jsons and the array summary. I think the hardest part of this workflow was robustness as a lot of the TPOT iterations failed and threw errors due to mismatches in the preprocessors and classifiers. It did continue to run and gave us solid results but all of those wasted searches significantly decrease how much of the search space we covered. Before next time I would explore possible ways to cut down on these failed models so as to keep the search as efficient as possible.
 
 # AI usage disclosure
 
