@@ -57,6 +57,10 @@ make demo
 
   Inside the StackGP folder there is a demo notebook currently under development that shows an implemention of see with StackGP instead of deap as the core genetic processing library.
 
+```
+StackGP/SegmentationGPModelDemo.ipynb
+```
+
 ### An Intro to SEE  
 
 Watch an introductory video to what SEE is, and how to use it [here](https://mediaspace.msu.edu/media/t/1_60yjrdjs).
