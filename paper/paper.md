@@ -24,6 +24,8 @@ Briefly describe related software or methods in the field and explain how your w
 
 Describe the main design choices, architecture, or workflow decisions that shape the software. Focus on meaningful trade-offs and why the chosen approach is appropriate for the research problem.
 
+Obviously the main software decision in this coding project was to use StackGP instead of deap for the genetic processing. The goal is to make SEE-segment more modern and robust and we thought StackGP would cut down the runtime. However an initial benchmark test showed that the old version with deap was substantially faster than the new version with StackGP with both producing similar segmentation masks (depends on the specific run but roughly 30 seconds compared to 8 minutes). More research is needed to see what is currently using so many resources when run with StackGP and if it would be possible to improve the runtime. Because the difference is so significant I strongly suspect that there is a bug somewhere or that SEE is using a trick of some sort that we haven't implemented with StackGP.
+
 # Research impact
 
 Summarize the current or expected impact of the software. This can include reproducible analyses, adoption by others, or evidence of significance in the research workflow. Keep this specific and realistic rather than promotional.

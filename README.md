@@ -44,7 +44,7 @@ make test
 
 **For Today:**
 
-  The HowToUse_Example or the Interactive_Example notebooks both provide a hands-on introduction to using this library.
+The HowToUse_Example or Interactive_Example notebooks both provide a hands-on introduction to using this library.
 
 **With makefile:**
 
@@ -55,7 +55,7 @@ make demo
 
 **For Tomorrow:**
 
-  Inside the StackGP folder there is a demo notebook currently under development that shows an implemention of see with StackGP instead of deap as the core genetic processing library.
+  Inside the StackGP folder there is a demo notebook currently under development that shows an implementation of SEE with StackGP instead of deap as the core genetic processing library.
 
 ```
 StackGP/SegmentationGPModelDemo.ipynb
