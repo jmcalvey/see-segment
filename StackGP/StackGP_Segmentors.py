@@ -1,5 +1,9 @@
 from see.Segmentors import *
+from see.Preprocessors import HistEqual, Rescale_intensity
 
+
+# Wrappers for all the SEE segmentors and preprocessors
+# Lets StackGP use them as operators in the GP model
 
 # bound a random value between min and max
 def boundVal(val, minVal, maxVal):
@@ -115,4 +119,29 @@ segmentOps = [
     seg_quick_shift,
     seg_morph_chan_vese,
     seg_morph_gac
+]
+
+
+def pre_hist_equal(img, nbins):
+    pre = HistEqual()
+
+    pre.params["nbins"] = max(2, int(nbins * 254) + 2)
+    pre.params["mask"] = None
+
+    return pre.evaluate(img)
+pre_hist_equal.__repr__ = lambda: "pre_hist_equal"
+
+
+def pre_rescale_intensity(img):
+    pre = Rescale_intensity()
+
+    pre.params["in_range"] = "image"
+    pre.params["out_range"] = (0, 1)
+
+    return pre.evaluate(img)
+pre_rescale_intensity.__repr__ = lambda: "pre_rescale_intensity"
+
+preprocessOps = [
+    pre_hist_equal,
+    pre_rescale_intensity
 ]
