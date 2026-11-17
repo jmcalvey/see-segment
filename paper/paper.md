@@ -1,10 +1,10 @@
 ---
 title: 'My Research Software Title'
 authors:
-  - name: Your Name
+  - name: James McAlvey
     affiliation: '1'
 affiliations:
-  - name: Your Institution
+  - name: Michigan State University
     index: 1
 ---
 
