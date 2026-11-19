@@ -55,11 +55,15 @@ make demo
 
 **For Tomorrow:**
 
-  Inside the StackGP folder there is a demo notebook currently under development that shows an implementation of SEE with StackGP instead of deap as the core genetic processing library.
+Inside the StackGP folder there is a demo notebook currently under development that shows an implementation of SEE with StackGP instead of deap as the core genetic processing library.
 
 ```
 StackGP/SegmentationGPModelDemo.ipynb
 ```
+
+**Disclaimer of Limitations:
+
+This example notebook demonstrates a functional end-to-end workflow for using StackGP with the existing SEE segmentors. However, the implementation is still under development as such has not been fully validated. As such, the results should be interpreted with caution and should not be considered reliable without further testing and verification.
 
 ### An Intro to SEE  
 
